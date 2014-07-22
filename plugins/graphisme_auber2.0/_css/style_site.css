@@ -1216,7 +1216,7 @@ form {
 
 #menuprincipal td {
 	border: 0;
-	background: #03a8ae;
+	background: linear-gradient(#03a8ae, #49ECDF);
 	padding: 0 4px 0px 0px;
 	height: 25px;
 	min-width: 35px;
