@@ -1210,7 +1210,7 @@ form {
 #menuprincipal {
 	margin:8px 0px 0px 0px;
 	padding:0;
-	background: #03a8ae;
+	background: linear-gradient(#03a8ae, #49ECDF);
 	height: 30px;
 }
 
