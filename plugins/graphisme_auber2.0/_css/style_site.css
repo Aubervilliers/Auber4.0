@@ -1208,7 +1208,7 @@ form {
 
 /*==========  Menu principal ==============*/
 #menuprincipal {
-	margin:0px 0px 0px 0px;
+	margin:8px 0px 0px 0px;
 	padding:0;
 	background: #03a8ae;
 	height: 30px;
@@ -1236,7 +1236,7 @@ form {
 	color: #FFFFFF;
 }
 
-/*==========  Menu principal avec retour à la ligne ==============*/
+/*==========  Menu principal avec retour ï¿½ la ligne ==============*/
 #menuprincipalretlig {
 	float:left;
 	width:100%;
