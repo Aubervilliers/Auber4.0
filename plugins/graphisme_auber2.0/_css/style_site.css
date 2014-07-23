@@ -1210,13 +1210,13 @@ form {
 #menuprincipal {
 	margin:8px 0px 0px 0px;
 	padding:0;
-	background: linear-gradient(#03a8ae, #49ECDF);
+	background: linear-gradient(#03a8ae, #05c8cf);
 	height: 30px;
 }
 
 #menuprincipal td {
 	border: 0;
-	background: linear-gradient(#03a8ae, #49ECDF);
+	background: linear-gradient(#03a8ae, #05c8cf);
 	padding: 0 4px 0px 0px;
 	height: 25px;
 	min-width: 35px;
