@@ -1231,6 +1231,7 @@ form {
 	padding-top: 6px;
 	text-decoration: none;
 	display: block;
+	padding-left: 12px
 }
 #menuprincipal a:hover {
 	color: #FFFFFF;
