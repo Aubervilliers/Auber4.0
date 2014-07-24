@@ -1219,7 +1219,7 @@ form {
 	background: linear-gradient(#03a8ae, #05c8cf);
 	padding: 0 4px 0px 0px;
 	height: 25px;
-	/* min-width: 35px */;
+	min-width: 35px;
 }
 
 #menuprincipal a {
