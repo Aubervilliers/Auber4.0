@@ -1282,8 +1282,8 @@ div.menu {
 }
 
 div.menu a.menuItem {
-  font-size: 0.7em;
-  line-height: 2em;
+  font-size: 0.75em;
+  line-height: 2.5em;
   color: #242424;
   background-color: #FFFFFF;
   border-top: dotted 1px #ADADAD;
