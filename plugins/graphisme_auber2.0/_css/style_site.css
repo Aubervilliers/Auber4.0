@@ -1850,7 +1850,7 @@ padding: 0.0em 0px 6px;
 	text-decoration: none;
 }
 .o2paj a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 #contenu .texte {
 	font-size: 13px;
@@ -1960,6 +1960,13 @@ padding: 0.0em 0px 6px;
 	padding: 0.25em 0px 0px 0px;
 	color: #3f6eb4;
 }
+
+
+.listes {
+margin-left:20px;
+padding-bottom:10px;
+}
+
 #contenu .listerub .textesousrub {
 	font-size: 0.7em;
 	margin: 0 0 0 0;
@@ -1989,7 +1996,6 @@ padding: 0.0em 0px 6px;
 	font-weight: bold;
 	display: block;
 	font-size: 0.9em;
-	padding: 0px 12px 0.25em 12px;
 	margin: 0px;
 }
 #contenu .listerub .liens a {
@@ -1999,7 +2005,7 @@ padding: 0.0em 0px 6px;
 	text-decoration: none;
 }
 #contenu .listerub .liens a:hover {
-	text-decoration: non;
+	text-decoration: none;
 }
 #contenu .listeart {
 	padding: 0.25em 0px 0px 12px;
