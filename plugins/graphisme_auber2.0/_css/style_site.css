@@ -386,7 +386,11 @@ border-radius: 4px;
 float: left;
 }
 
-#textaccessibility {
+.blocoutil-sc{
+padding: 0.0em 0px 6px;
+	font-size: 0.56em;
+	height: 17px;
+	float:right;
 }
 
 #iconeimprimer{
@@ -394,6 +398,18 @@ background: url(../NAVPICS/print.png) no-repeat 0px 0px;
 background-size: 100%;
 width:24px;
 height:24px;
+float:left;
+}
+
+.print-sc{
+margin-top: -1px;
+margin-left: -1px;
+}
+
+.courriel-sc{
+margin-right: 20px;
+margin-left: 6px;
+margin-top: 2px;
 }
 
 #envcourriel{
