@@ -4,23 +4,29 @@
 <script type="text/javascript">
   $(document).ready(function() {
  $('#plusgrand').click(function(){
-	curSize= parseInt($('.texte').css('font-size')) + 2;
-  if(curSize<=17)
-        $('.texte').css('font-size', curSize);
-        $('#chapeau').css('font-size', curSize);
-        $('.rub > h2').css('font-size', curSize);
-        $('.listerub').css('font-size', curSize);
-        $('.listeart').css('font-size', curSize);
-        }); 
+	curSizeChapeau= parseInt($('.texte').css('font-size')) + 2;
+	curSizeTitle= parseInt($('.rub > h2').css('font-size')) + 2;
+  if(curSizeTitle<=24){
+        $('.texte').css('font-size', curSizeChapeau);
+        $('#chapeau').css('font-size', curSizeChapeau);
+        $('.rub > h2').css('font-size', curSizeTitle);
+       }
+	else if (curSizeTitle>24) {
+		return curSizeTitle;
+	} 
+	}); 
 		
   $('#pluspetit').click(function(){ 
-        curSize= parseInt($('.texte').css('font-size')) - 2;
-  if(curSize>=9)
-        $('.texte').css('font-size', curSize); 
-		$('#chapeau').css('font-size', curSize);
-        $('.rub > h2').css('font-size', curSize);
-        $('.listerub').css('font-size', curSize);
-        $('.listeart').css('font-size', curSize);
+        curSizeChapeau= parseInt($('.texte').css('font-size')) - 2;
+		curSizeTitle= parseInt($('.rub > h2').css('font-size')) - 2;
+  if(curSizeChapeau>=9){
+        $('.texte').css('font-size', curSizeChapeau); 
+		$('#chapeau').css('font-size', curSizeChapeau);
+        $('.rub > h2').css('font-size', curSizeTitle);
+	}
+	else if (curSizeTitle<9) {
+		return curSizeTitle;
+	} 
   });
 });
   </script>
