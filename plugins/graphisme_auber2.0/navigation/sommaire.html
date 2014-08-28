@@ -1,4 +1,99 @@
 				<div id="menu1">
+				
+<div id="profilage">
+    	<h2>NAVIGUEZ --------> 
+		<br>
+		COMME VOUS ÊTES</h2>
+   	<ul>
+						
+						<li class="profil-photo"></li>
+						<a href="Jeune"><li id="jeune-hover">Jeune</li></a>
+						
+						<a href="Parent"><li id="parent-hover">Parent</li></a>
+						
+						<a href="Senior"><li id="senior-hover">Senior</li></a>
+						
+						<a href="Nouvel-albertivillarien"><li id="nouvel-hover">Nouvel arrivant</li></a>
+						
+						<a href="Association"><li id="asso-hover">Association</li></a>
+						
+						<a href="Acteur-economique"><li id="acteureco-hover">Acteur économique</li></a>
+						
+						<a href="Salarie-e-a-Aubervilliers"><li id="salarie-hover">Salarié(e) à Auber</li></a>
+						
+						<a href="En-situation-de-handicap"><li id="handi-hover">Personne handicapée</li></a>
+						
+						
+	</ul>
+   </div></body>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+
+$(function(){
+
+<!-- Parent -->
+$('#parent-hover').mouseenter(function(){
+	$('.profil-photo').css('background-image','url("./plugins/graphisme_auber2.0/_images/profilage/parent1.jpg")');
+})
+$('#parent-hover').mouseleave(function(){
+	$('.profil-photo').css('background-image','url("./plugins/graphisme_auber2.0/_images/profilage/jeunes.jpg")');
+})
+
+<!-- sénior -->
+$('#senior-hover').mouseenter(function(){
+	$('.profil-photo').css('background-image','url("./plugins/graphisme_auber2.0/_images/profilage/senior.jpg")');
+})
+$('#senior-hover').mouseleave(function(){
+	$('.profil-photo').css('background-image','url("./plugins/graphisme_auber2.0/_images/profilage/jeunes.jpg")');
+})
+
+<!-- Nouvel arrivant -->
+$('#nouvel-hover').mouseenter(function(){
+	$('.profil-photo').css('background-image','url("./plugins/graphisme_auber2.0/_images/profilage/nouvelarrivant.jpg")');
+})
+$('#nouvel-hover').mouseleave(function(){
+	$('.profil-photo').css('background-image','url("./plugins/graphisme_auber2.0/_images/profilage/jeunes.jpg")');
+})
+
+<!-- Association -->
+$('#asso-hover').mouseenter(function(){
+	$('.profil-photo').css('background-image','url("./plugins/graphisme_auber2.0/_images/profilage/association.jpg")');
+})
+$('#asso-hover').mouseleave(function(){
+	$('.profil-photo').css('background-image','url("./plugins/graphisme_auber2.0/_images/profilage/jeunes.jpg")');
+})
+
+<!-- Acteur économique -->
+$('#acteureco-hover').mouseenter(function(){
+	$('.profil-photo').css('background-image','url("./plugins/graphisme_auber2.0/_images/profilage/acteureco.jpg")');
+})
+$('#acteureco-hover').mouseleave(function(){
+	$('.profil-photo').css('background-image','url("./plugins/graphisme_auber2.0/_images/profilage/jeunes.jpg")');
+})
+
+<!-- Salarié -->
+$('#salarie-hover').mouseenter(function(){
+	$('.profil-photo').css('background-image','url("./plugins/graphisme_auber2.0/_images/profilage/salarie1.jpg")');
+})
+$('#salarie-hover').mouseleave(function(){
+	$('.profil-photo').css('background-image','url("./plugins/graphisme_auber2.0/_images/profilage/jeunes.jpg")');
+})
+
+<!-- Handicapé -->
+$('#handi-hover').mouseenter(function(){
+	$('.profil-photo').css('background-image','url("./plugins/graphisme_auber2.0/_images/profilage/handicap.jpg")');
+})
+$('#handi-hover').mouseleave(function(){
+	$('.profil-photo').css('background-image','url("./plugins/graphisme_auber2.0/_images/profilage/jeunes.jpg")');
+})
+
+
+
+})
+
+</script>
+				
 				<h1 class="invisible"><:cisquel:eq_menu_gauche:></h1>
 					<BOUCLE_colonne_gauche(RUBRIQUES){raccourci=_portail_gauche_titre_bloc}{par num titre}>
     					<div class="boxtitregauche"><div class="blc"><div class="brc"><div class="tlc"><div class="trc"><h2>[(#TITRE|supprimer_numero)]</h2></div></div></div></div></div>

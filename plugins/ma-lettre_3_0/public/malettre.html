@@ -21,10 +21,6 @@
   
   a {color:#57B2FF;}
   
- .post {
-		background-color: white;
-		border-left: 4px solid #e17c2f;
-		}
   </style>
 </head>
 
@@ -43,10 +39,10 @@
            
           [(#REM) edito]
           <BOUCLE_edito(ARTICLES){id_article=#ENV{id_edito}}>                    
-               <div style="text-align:justify;margin-bottom:0.4em;padding:5px 10px 10px 10px;background:#fafafa;" class="post">                     
-                          [<div style="float:right;padding:10px 0 2px 15px;"><img src="(#LOGO_ARTICLE|image_reduire{0,110}|image_reduire{110,0}|extraire_attribut{src}|url_absolue)" alt="" border="0" /></div>]
+               <div style="text-align:justify;margin-bottom:0.4em;padding:5px 10px 10px 10px;background:#FFF;float: left; width: 476px;" class="post">                     
+                          [<div style="float:right;padding:10px;border-radius: 2px;border: 1px solid #989898;"><img src="(#LOGO_ARTICLE|image_reduire{0,110}|image_reduire{110,0}|extraire_attribut{src}|url_absolue)" alt="" border="0" /></div>]
                                                                                                        
-                          <h2 style="margin:0;padding:0;font-size:1em"><a href="[(#URL_ARTICLE|url_absolue)]" style="font-family:Arial;color:#A5B152;padding-left:0px;text-decoration:none;">#TITRE</a></h2>
+                          <h2 style="margin:0;padding-top:8px;font-size:1em"><a href="[(#URL_ARTICLE|url_absolue)]" style="font-family:Arial;color:#03a8ae;padding-left:0px;text-decoration:none;">#TITRE</a></h2>
                           [<div style="font-family:Arial;font-size:0.8em;color:#848484;">(#TEXTE|image_reduire{600}|liens_absolus)</div>]                          
                 </div>          
           </BOUCLE_edito> 
@@ -57,11 +53,11 @@
           <BOUCLE_selection_bonux(POUR){tableau #GET{selection}}><BOUCLE_artx(ARTICLES){id_article=#VALEUR}>                
                 <div style="clear:both;border-top:1px solid #ededed;"></div>
                
-                <div style="text-align:justify;margin-bottom:0.4em;padding:5px 10px 10px 10px;">                     
-                          [<div style="float:right;padding:10px 0 2px 15px;"><img src="(#LOGO_ARTICLE|image_reduire{0,110}|image_reduire{110,0}|extraire_attribut{src}|url_absolue)" alt="" border="0" /></div>]
+                <div style="text-align:justify;margin-bottom:0.4em;padding:5px 10px 10px 10px; float:left; width: 476px;background:#FFF;border-left:4px solid #e17c2f;" class="post">                     
+                          [<div style="float:left;padding:10px;"><img src="(#LOGO_ARTICLE|image_reduire{0,110}|image_reduire{110,0}|extraire_attribut{src}|url_absolue)" alt="" border="0" style="border:1px solid #eee;border-radius:3px;"/></div>]
                                                                                                        
-                          <h2 style="margin:0;padding:0;font-size:1em"><a href="[(#URL_ARTICLE|url_absolue)]" style="font-family:Arial;color:#A5B152;padding-left:0px;text-decoration:none;">#TITRE</a></h2>
-                          [<div style="font-family:Arial;font-size:0.8em;color:#848484;">(#INTRODUCTION)</div><br />]
+                          <h2 style="margin:0;padding-top:8px;font-size:1em"><a href="[(#URL_ARTICLE|url_absolue)]" style="font-family:Arial;color:#03a8ae;padding-left:0px;text-decoration:none;">#TITRE</a></h2>
+                          [<div style="font-family:Arial;font-size:0.8em;color:#848484;">(#INTRODUCTION)</div>]
                           <a href="[(#URL_ARTICLE|url_absolue)]" style="color:#57B2FF;font-family:Arial;font-size:0.8em;"><:malettre:lire_en_ligne:></a>
                 </div>          
           </BOUCLE_artx></BOUCLE_selection_bonux>
@@ -80,10 +76,18 @@
          </B_eveselection_bonux>
          
            <!-- pied -->
-           <div style="width:700px;padding:5px;background:#F0EEE1;font-family:Arial;font-size:0.8em;color:#333333;">
-                       <strong>#NOM_SITE_SPIP</strong><br />
-                       [(#DESCRIPTIF_SITE_SPIP)]
-                       <a href="#URL_SITE_SPIP" style="color:#000000;">#URL_SITE_SPIP</a>
+           <div style="width:500px;height:125px;padding:0;background:#F0EEE1;font-family:Arial;font-size:0.8em;color:#333333;">
+                      				   
+					   
+					   <table class="reseaux-sociaux" style="width:100%;height:125px;margin-left: 0%;" background="http://intranet.mairie-aubervilliers.fr/auber4.0/plugins/ma-lettre_3_0/images/pied.png">
+					   	<tr style="float:left;margin-left: 13%;margin-top: 9%;	" >
+							<td style="float:left;padding: 20px;"><a href="https://www.facebook.com/aubervilliers93" target="_blank" title="Suivez-nous sur Facebook"><img src="[(#CHEMIN{images/facebook.png}|url_absolue)]"></a></td>
+							<td style="float:left;padding: 20px;"><a href="https://twitter.com/aubervilliers93" target="_blank" title="Suivez-nous sur Twitter"><img src="[(#CHEMIN{images/twitter.png}|url_absolue)]"></a></td>
+							<td style="float:left;padding: 20px;"><a href="https://plus.google.com/u/0/+aubervilliers/posts" target="_blank" title="Suivez-nous sur Google +"><img src="[(#CHEMIN{images/google.png}|url_absolue)]"></a></td>
+							<td style="float:left;padding: 20px;"><a href="https://www.youtube.com/user/93aubervilliers" target="_blank" title="Nos vidéos sur Youtube"><img src="[(#CHEMIN{images/youtube.png}|url_absolue)]"></a></td>
+							<td style="float:left;padding: 20px;"><a href="https://www.flickr.com/photos/93aubervilliers/" target="_blank" title="Nos photos sur Flickr"><img src="[(#CHEMIN{images/flickr.png}|url_absolue)]"></a></td>
+						</tr>
+					   </table>
            </div>
            <!-- #pied -->
            

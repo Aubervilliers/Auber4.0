@@ -139,7 +139,7 @@
 	padding-bottom: 2px;
 }
 
-#icone_pratique h2, #aubermensuel h2 {
+#icone_pratique h2, #aubermensuel h2, #profilage h2 {
 	font-size: 0.75em;
 	color: #FFFFFF;
 	font-weight: bold;
@@ -373,4 +373,65 @@ margin-left: -26px;
 box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.68);
 border: 3px solid #6083B6;
 z-index: 999;
+}
+
+/* Profilage */
+
+#profilage{
+
+background-color: rgba(3, 168, 174, 0.7);
+border: none;
+margin-bottom: 11px;
+
+	width:154px;
+
+	/*background-color:red;*/
+	border-radius:4px;
+	margin-left:10px;
+	padding-top: 2px;
+}
+
+#profilage h2{
+margin-bottom:0;
+background-color:#03a8ae;
+font-family: 'Verdana', Sans-serif;
+padding: 5px;
+margin-left: 1px;
+border:none;
+
+}
+
+#profilage ul {
+padding:0;
+margin:0;
+border:none;
+}
+
+#profilage ul li{
+list-style-type:none;
+border-top:1px dotted #eee;
+padding: 6px;
+margin:0;
+}
+
+#profilage ul li, #profilage ul a{
+font-family: 'Verdana', Sans-serif;
+font-size:0.9em;
+text-decoration:none !important;
+color: #FFF;
+}
+
+#profilage ul li:hover {
+background-color: rgba(3, 168, 174, 1);
+}
+
+.profil-photo{
+background-image:url('../_images/profilage/jeunes.jpg');
+background-repeat:no-repeat;
+background-size:100% 100%;
+height:80px;
+}
+
+#handi-hover{
+border-radius:0 4px 4px;
 }
