@@ -6,6 +6,14 @@
 
 /* JUSTICE LEAGUE 2 */
 
+/* Démarches */
+
+.demarches {
+float: left;
+width: 25%;
+height: 100px;
+}
+
 /*-- reservation pour Eluminures typographiques --*/
 
 .texteencadre-spip {
@@ -1229,6 +1237,7 @@ form {
 	margin:8px 0px 0px 0px;
 	padding:0;
 	background: linear-gradient(#03a8ae, #05c8cf);
+	background-color: #03a8ae;
 	height: 30px;
 }
 
@@ -3406,6 +3415,17 @@ ul.spip {overflow:hidden;}
 }
 
 #rechercher input#validsearch {
+background-color: #FFF;
+border: 1px solid #3f6eb4;
+border-radius: 0px 5px 5px 0px;
+color: #3f6eb4;
+font-weight: bold;
+height: 24px;
+margin: 2px -6px 0;
+width: 28px;
+}
+
+#rechercher input#validsearch:hover {
 background-color: #3f6eb4;
 border: 1px solid #3f6eb4;
 border-radius: 0px 5px 5px 0px;
@@ -3413,9 +3433,9 @@ color: #FFF;
 height: 24px;
 margin: 2px -6px 0;
 width: 28px;
-}
+cursor:pointer;
 
-#rechercher input#validsearch:hover {background-color: #03a8ae;cursor:pointer;}
+}
 
 .f_style2 input{
     background-color: #E1E0DF;
